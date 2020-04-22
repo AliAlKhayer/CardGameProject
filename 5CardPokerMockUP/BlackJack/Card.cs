@@ -8,14 +8,22 @@ namespace BlackJack
 {
     class Card
     {
+        public string value { get; set; }
         public string suit { get; set; }
-        public int value { get; set; }
-        public List<string> suits { get; set; }
-        public List<int> values { get; set; }
 
         public Card()
         {
             
+        }
+        public Card(string cardFace, string cardSuit)
+        {
+            value = cardFace;
+            suit = cardSuit;          
+        }
+
+        public override string ToString()
+        {
+            return $"Face is{value} and suit is {suit}";
         }
     }
 }
