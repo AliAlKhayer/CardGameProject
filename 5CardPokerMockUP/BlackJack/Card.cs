@@ -8,5 +8,12 @@ namespace BlackJack
 {
     class Card
     {
+        public string suit { get; set; }
+        public string value { get; set; }
+
+        public Card()
+        {
+
+        }
     }
 }
