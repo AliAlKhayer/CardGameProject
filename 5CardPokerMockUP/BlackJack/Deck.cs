@@ -8,7 +8,6 @@ namespace BlackJack
 {
     class Deck
     {
-
         private Card[] deck { get; set; }
         private int currentCard { get; set; }
         private const int numOfCards = 52;
