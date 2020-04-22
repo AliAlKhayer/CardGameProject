@@ -26,5 +26,28 @@ namespace BlackJack
                 deck[i] = new Card(faces[i % 11], suits[i / 13]);
             }
         }
+        private void shuffle()
+        {
+            currentCard = 0;
+            for (int i = 0; i < deck.Length; i++)
+            {
+                int secondNum = randomNumber.Next(numOfCards);
+                Card placeholder = deck[i];
+                deck[i] = deck[secondNum];
+                deck[secondNum] = placeholder;
+            }
+        }
+
+        public Card Deal()
+        {
+            if (currentCard < deck.Length)
+            {
+                return deck[currentCard++];
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

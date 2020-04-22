@@ -12,8 +12,7 @@ namespace BlackJack
         public string suit { get; set; }
 
         public Card()
-        {
-            
+        {        
         }
         public Card(string cardFace, string cardSuit)
         {
