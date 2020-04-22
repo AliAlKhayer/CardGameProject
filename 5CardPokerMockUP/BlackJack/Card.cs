@@ -9,11 +9,12 @@ namespace BlackJack
     class Card
     {
         public string suit { get; set; }
-        public string value { get; set; }
+        public int value { get; set; }
 
         public Card()
         {
-
+            public List<string> suits { get; set; }
+            public List<int> values { get; set; }
         }
     }
 }
