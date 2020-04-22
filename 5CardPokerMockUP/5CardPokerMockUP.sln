@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockUp", "MockUp\MockUp.csproj", "{510FB87C-EED4-4DD5-A08C-9239C697F682}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJack", "BlackJack\BlackJack.csproj", "{B4FD7257-E45D-4FD2-99A4-1E763DDE86EC}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{510FB87C-EED4-4DD5-A08C-9239C697F682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{510FB87C-EED4-4DD5-A08C-9239C697F682}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{510FB87C-EED4-4DD5-A08C-9239C697F682}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{510FB87C-EED4-4DD5-A08C-9239C697F682}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4FD7257-E45D-4FD2-99A4-1E763DDE86EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4FD7257-E45D-4FD2-99A4-1E763DDE86EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4FD7257-E45D-4FD2-99A4-1E763DDE86EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
