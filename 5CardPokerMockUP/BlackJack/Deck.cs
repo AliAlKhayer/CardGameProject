@@ -49,7 +49,5 @@ namespace BlackJack
                 return null;
             }
         }
-
-
     }
 }
