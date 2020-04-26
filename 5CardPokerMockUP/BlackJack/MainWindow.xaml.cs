@@ -29,7 +29,11 @@ namespace BlackJack
         {
             Deck deck1 = new Deck();
             deck1.shuffle();
-            lstShuffle.Items.Add(deck1);
+            for (int i = 0; i < 52; i++)
+            {
+                lstShuffle.Items.Add(deck1.Deal());
+
+            }
 
             
             
@@ -37,9 +41,7 @@ namespace BlackJack
 
         private void btnDeal_Click(object sender, RoutedEventArgs e)
         {
-            Deck deck1 = new Deck();
-            deck1.Deal();
-            lstDeal.Items.Add(deck1);
+
         }
     }
 }

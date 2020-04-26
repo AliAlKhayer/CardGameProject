@@ -9,8 +9,11 @@
     <Grid>
         <Button x:Name="btnShuffle" Content="Shuffle" HorizontalAlignment="Left" Margin="29,43,0,0" VerticalAlignment="Top" Width="75" Click="btnShuffle_Click"/>
         <Button x:Name="btnDeal" Content="Deal" HorizontalAlignment="Left" Margin="358,372,0,0" VerticalAlignment="Top" Width="75" Click="btnDeal_Click"/>
-        <ListBox x:Name="lstShuffle" HorizontalAlignment="Left" Height="202" Margin="72,121,0,0" VerticalAlignment="Top" Width="217"/>
-        <ListBox x:Name="lstDeal" HorizontalAlignment="Left" Height="202" Margin="486,121,0,0" VerticalAlignment="Top" Width="235"/>
+        <ListBox x:Name="lstShuffle" HorizontalAlignment="Left" Height="202" Margin="29,121,0,0" VerticalAlignment="Top" Width="106"/>
+        <ListBox x:Name="lstDealer" HorizontalAlignment="Left" Height="202" Margin="198,121,0,0" VerticalAlignment="Top" Width="235"/>
+        <ListBox x:Name="lstPlayer" HorizontalAlignment="Left" Height="202" Margin="496,121,0,0" VerticalAlignment="Top" Width="228"/>
+        <Label x:Name="lblDealer" Content="Dealer" HorizontalAlignment="Left" Margin="286,78,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPlayer" Content="Player" HorizontalAlignment="Left" Margin="577,78,0,0" VerticalAlignment="Top" Width="92"/>
 
     </Grid>
 </Window>

@@ -35,7 +35,9 @@ namespace BlackJack
                 Card placeholder = deck[i];
                 deck[i] = deck[secondNum];
                 deck[secondNum] = placeholder;
-            }           
+            }
+
+            
         }
 
         public Card Deal()

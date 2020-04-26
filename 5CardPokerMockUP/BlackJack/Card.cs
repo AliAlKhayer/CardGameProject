@@ -11,9 +11,6 @@ namespace BlackJack
         public string value { get; set; }
         public string suit { get; set; }
 
-        public Card()
-        {        
-        }
         public Card(string cardFace, string cardSuit)
         {
             value = cardFace;
@@ -22,7 +19,7 @@ namespace BlackJack
 
         public override string ToString()
         {
-            return $"Face is{value} and suit is {suit}";
+            return $"{value} of {suit}";
         }
     }
 }
