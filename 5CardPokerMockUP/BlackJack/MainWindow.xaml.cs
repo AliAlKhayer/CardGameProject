@@ -32,16 +32,30 @@ namespace BlackJack
             for (int i = 0; i < 52; i++)
             {
                 lstShuffle.Items.Add(deck1.Deal());
-
-            }
-
-            
-            
+            }                  
         }
-
         private void btnDeal_Click(object sender, RoutedEventArgs e)
         {
+            Deck deck1 = new Deck();
+            deck1.shuffle();
+            for (int i = 0; i < 2; i++)
+            {
+                lstPlayer.Items.Add(deck1.Deal());
+            }
+            for (int i = 3; i < 5; i++)
+            {
+                lstDealer.Items.Add(deck1.Deal());
+            }
+        }
 
+        private void btnHitMe_Click(object sender, RoutedEventArgs e)
+        {
+            Deck deck1 = new Deck();
+            deck1.shuffle();
+            for (int i = 0; i < 1; i++)
+            {
+                lstPlayer.Items.Add(deck1.Deal());
+            }
         }
     }
 }
