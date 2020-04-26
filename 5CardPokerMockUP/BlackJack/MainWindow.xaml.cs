@@ -24,5 +24,22 @@ namespace BlackJack
         {
             InitializeComponent();
         }
+
+        private void btnShuffle_Click(object sender, RoutedEventArgs e)
+        {
+            Deck deck1 = new Deck();
+            deck1.shuffle();
+            lstShuffle.Items.Add(deck1);
+
+            
+            
+        }
+
+        private void btnDeal_Click(object sender, RoutedEventArgs e)
+        {
+            Deck deck1 = new Deck();
+            deck1.Deal();
+            lstDeal.Items.Add(deck1);
+        }
     }
 }

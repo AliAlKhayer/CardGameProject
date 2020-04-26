@@ -8,10 +8,10 @@ namespace BlackJack
 {
     class Deck
     {
-        private Card[] deck { get; set; }
-        private int currentCard { get; set; }
-        private const int numOfCards = 52;
-        private Random randomNumber { get; set; }
+        public Card[] deck { get; set; }
+        public int currentCard { get; set; }
+        public const int numOfCards = 52;
+        public Random randomNumber { get; set; }
 
         public Deck()
         {
@@ -26,7 +26,7 @@ namespace BlackJack
                 deck[i] = new Card(faces[i % 11], suits[i / 13]);
             }
         }
-        private void shuffle()
+        public void shuffle()
         {
             currentCard = 0;
             for (int i = 0; i < deck.Length; i++)
@@ -35,7 +35,7 @@ namespace BlackJack
                 Card placeholder = deck[i];
                 deck[i] = deck[secondNum];
                 deck[secondNum] = placeholder;
-            }
+            }           
         }
 
         public Card Deal()
